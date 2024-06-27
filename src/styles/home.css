@@ -1,0 +1,1169 @@
+.converter {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/images/main_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  padding: 130px 0 30px 0;
+}
+
+.main_top_heading {
+  font-size: 74px;
+  font-weight: 700;
+  max-width: 800px;
+  margin-bottom: 0;
+  line-height: 110%;
+  color: #0f3029;
+  text-shadow: 2px 2px #fff, -2px 2px #fff, 2px -1px #fff, -2px -1px #fff,
+    2px 2px 28px #555;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.coin_converter {
+  background-color: #537c50;
+  border: 2px solid #0f3029;
+  padding: 30px 20px;
+  border-radius: 11px;
+  margin-top: 30px;
+}
+
+.coin_inner {
+  background-color: #0f3029;
+  padding: 20px;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.swap_coins {
+  position: absolute;
+  color: #0f3029;
+  background-color: #e2cbac;
+  height: 60px;
+  width: 60px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.3s all;
+}
+
+.swap_coins:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.input_convert {
+  background-color: #9fb926;
+  padding: 30px 20px 45px 20px;
+  border-radius: 12px;
+}
+
+.input_convert h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.connect_button {
+  background-color: #0f3029;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 13px;
+  font-size: 20px;
+  border-radius: 11px;
+  margin-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s all;
+  border: 2px solid #0f3029;
+}
+
+.connect_button:hover {
+  background-color: #9fb926;
+}
+
+.wallet_icon {
+  gap: 10px;
+  font-size: 24px;
+  color: #cfdc92;
+}
+
+.coin_vkj {
+  background-color: #0f3029;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.coin_vkj p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.inputs_select {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.converted_data {
+  width: 77%;
+  padding: 10px 20px;
+  background-color: #0f3029;
+  border-radius: 12px;
+}
+
+.converted_data input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.converted_data input::placeholder {
+  color: #fff;
+}
+
+.converted_data p {
+  color: #b7c0bf;
+  font-size: 16px;
+}
+
+.basic-select .select__control {
+  background-color: #0f3029;
+  height: 100%;
+  color: #fff;
+  box-shadow: none !important;
+  border: none;
+  border-radius: 12px;
+}
+
+.select__single-value span {
+  color: #fff;
+}
+
+.css-t3ipsp-contr01:hover {
+  border-color: none !important;
+}
+
+.select__indicator-separator {
+  display: none !important;
+}
+
+/* about */
+
+.about_crypto {
+  position: relative;
+  padding-top: 10rem;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.about_dog {
+  position: relative;
+  top: -120px;
+  left: 0;
+}
+
+.about_content {
+  position: relative;
+  top: -100px;
+  left: 0;
+}
+
+.about_dog img {
+  width: 100%;
+  height: 100%;
+}
+
+.about_dog_fl {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.grass {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: auto;
+}
+
+.grass img {
+  width: 100%;
+  height: 400px;
+}
+
+.main_para {
+  color: #fff;
+  font-size: 22px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.para_margin {
+  margin-top: 25px;
+}
+
+.section_padding {
+  padding-top: 80px;
+}
+
+.roadmap_para {
+  text-align: center;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.roadmap_layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.roadmap_inner {
+  position: relative;
+  flex: 0 32%;
+}
+
+.roadmap_inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.roadmap_content {
+  position: absolute;
+  top: 63%;
+  left: 33%;
+  transform: translate(-48%, -50%);
+}
+
+.roadmap_content h3 {
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 1px 1px #28723e, -1px 1px #28723e, 1px -1px #28723e,
+    -1px -1px #28723e, 1px 1px 5px #555;
+  margin-bottom: 22px;
+}
+
+.roadmap_content ul {
+  color: #fff;
+  margin-left: 26px;
+  list-style: circle;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.roadmap_content ul li {
+  font-size: 20px;
+}
+
+.wood_border img {
+  width: 100%;
+  padding-top: 80px;
+}
+
+/* tokenomics */
+
+.tokenomics_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.tokenomics .polygon {
+  position: relative;
+}
+
+.polygon_dog {
+  position: absolute;
+  bottom: -50px;
+  z-index: 2;
+}
+
+.tokenomics_text {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tokenomics_heading {
+  font-size: 48px;
+  text-align: center;
+}
+
+.tokenomics_para {
+  color: #b7c0bf;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+}
+
+.rectangle_1 {
+  position: absolute;
+  left: 6%;
+  top: 6%;
+}
+
+.rectangle_2 {
+  position: absolute;
+  right: 6%;
+  top: 6%;
+}
+
+.rectangle_3 {
+  position: absolute;
+  left: 6%;
+  bottom: 6%;
+}
+
+.rectangle_4 {
+  position: absolute;
+  right: 6%;
+  bottom: 6%;
+}
+
+.rectangle_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tokenomics h2 {
+  margin-bottom: 30px;
+}
+
+/* rewards */
+
+.rewards_layout {
+  align-items: center;
+}
+
+.mobile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reward_lists ul {
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reward_lists ul li {
+  color: #fff;
+  font-size: 20px;
+}
+
+.reward_lists ul li span {
+  color: #9fb926;
+}
+
+/* questions */
+
+.questions {
+  padding-bottom: 80px;
+}
+
+.acc_sec {
+  margin-top: 30px;
+}
+
+.accordion-button {
+  background-color: #4e734a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 25px 0;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #4e734a;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 0 !important;
+}
+
+.accordion-item {
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-header {
+  border-bottom: 2px dashed #0f3029;
+  background: #4e734a;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button,
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 0;
+}
+
+.accordion-collapse {
+  background-color: #4e734a;
+}
+.accordion-body {
+  padding: 25px 0;
+}
+.accordion-body p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1600px) {
+  .main_top_heading {
+    font-size: 63px;
+  }
+
+  .converter {
+    padding: 110px 0 30px 0;
+  }
+
+  .para_margin {
+    margin-top: 22px;
+  }
+
+  .about_crypto {
+    padding-top: 9rem;
+    min-height: 88vh;
+  }
+
+  .main_para {
+    line-height: 145%;
+    font-size: 20px;
+  }
+
+  .section_padding {
+    padding-top: 70px;
+  }
+
+  .roadmap_para {
+    width: 800px;
+    margin: 20px auto;
+  }
+
+  .roadmap_layout {
+    gap: 25px;
+  }
+
+  .roadmap_content h3 {
+    font-size: 32px;
+    margin-bottom: 19px;
+  }
+
+  .roadmap_content ul {
+    row-gap: 13px;
+  }
+
+  .wood_border img {
+    padding-top: 70px;
+  }
+
+  .rectangle_design img,
+  .polygon_design {
+    width: 100%;
+  }
+
+  .tokenomics_para {
+    font-size: 35px;
+  }
+
+  .tokenomics_heading {
+    font-size: 42px;
+  }
+
+  .rectangle_1 {
+    left: 0%;
+  }
+
+  .rectangle_2 {
+    right: 0%;
+  }
+
+  .rectangle_3 {
+    left: 0%;
+  }
+
+  .rectangle_4 {
+    right: 0%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main_top_heading {
+    font-size: 53px;
+  }
+
+  .converter {
+    padding: 100px 0 30px 0;
+    background-position-x: center;
+  }
+
+  .coin_converter {
+    padding: 25px 15px;
+    margin-top: 25px;
+  }
+
+  .coin_inner {
+    padding: 15px;
+  }
+
+  .input_convert {
+    padding: 25px 15px 40px 15px;
+  }
+
+  .input_convert h2 {
+    font-size: 20px;
+  }
+
+  .wallet_icon {
+    font-size: 22px;
+  }
+
+  .coin_vkj p {
+    font-size: 17px;
+  }
+
+  .connect_button {
+    font-size: 19px;
+    margin-top: 17px;
+  }
+
+  .main_para {
+    line-height: 140%;
+    font-size: 19px;
+  }
+
+  .grass img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .about_crypto {
+    padding-top: 9rem;
+    min-height: 82vh;
+  }
+
+  .section_padding {
+    padding-top: 60px;
+  }
+
+  .roadmap_para {
+    margin: 15px auto;
+  }
+
+  .roadmap_layout {
+    gap: 20px;
+  }
+
+  .roadmap_content ul {
+    row-gap: 10px;
+  }
+
+  .roadmap_content h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+
+  .roadmap_content {
+    left: 38%;
+  }
+
+  .roadmap_content ul li {
+    font-size: 18px;
+  }
+
+  .wood_border img {
+    padding-top: 60px;
+  }
+
+  .tokenomics h2 {
+    margin-bottom: 25px;
+  }
+
+  .polygon_design {
+    width: 480px;
+  }
+
+  .rectangle_design img {
+    width: 285px;
+  }
+
+  .tokenomics_heading {
+    font-size: 37px;
+  }
+
+  .tokenomics_para {
+    font-size: 30px;
+  }
+
+  .polygon_dog img {
+    width: 470px;
+  }
+
+  .reward_lists ul {
+    margin-top: 30px;
+    gap: 16px;
+  }
+
+  .reward_lists ul li {
+    font-size: 18px;
+  }
+
+  .questions {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .converter {
+    padding: 90px 0 30px 0;
+  }
+
+  .main_top_heading {
+    font-size: 48px;
+  }
+
+  .coin_converter {
+    margin-top: 20px;
+  }
+
+  .input_convert {
+    padding: 20px 15px 35px 15px;
+  }
+
+  .swap_coins {
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+  }
+
+  .connect_button {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .converted_data input {
+    font-size: 17px;
+  }
+
+  .converted_data p {
+    font-size: 15px;
+  }
+
+  .main_para {
+    font-size: 18px;
+  }
+
+  .para_margin {
+    margin-top: 19px;
+  }
+
+  .about_dog img {
+    height: 522px;
+  }
+
+  .about_crypto {
+    padding-top: 8rem;
+    min-height: 82vh;
+  }
+
+  .section_padding {
+    padding-top: 50px;
+  }
+
+  .roadmap_inner {
+    flex: 0 31%;
+  }
+
+  .roadmap_content h3 {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+
+  .roadmap_content ul {
+    row-gap: 4px;
+  }
+
+  .wood_border img {
+    padding-top: 50px;
+  }
+
+  .tokenomics_heading {
+    font-size: 32px;
+  }
+
+  .polygon_design {
+    width: 414px;
+  }
+
+  .polygon_dog img {
+    width: 395px;
+  }
+
+  .reward_lists ul li {
+    font-size: 17px;
+  }
+
+  .accordion-button {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .accordion-body {
+    padding: 20px 0;
+  }
+
+  .questions {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main_top_heading {
+    font-size: 40px;
+    width: 600px;
+  }
+
+  .about_dog img {
+    height: auto;
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about_content {
+    top: 0;
+    margin-top: 20px;
+  }
+
+  .about_dog {
+    top: -90px;
+    margin-top: 100px;
+  }
+
+  .about_crypto {
+    padding-top: 2rem;
+    min-height: 100%;
+  }
+
+  .grass {
+    bottom: 0;
+  }
+
+  .grass img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_para {
+    font-size: 17px;
+  }
+
+  .roadmap_inner {
+    flex: 0 48%;
+  }
+
+  .roadmap_content h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .roadmap_content ul {
+    row-gap: 7px;
+  }
+
+  .polygon_design {
+    width: 354px;
+  }
+
+  .polygon_dog img {
+    width: 330px;
+  }
+
+  .rectangle_design img {
+    width: 220px;
+  }
+
+  .tokenomics_heading {
+    font-size: 27px;
+  }
+
+  .tokenomics_para {
+    font-size: 27px;
+  }
+
+  .tokenomics_text {
+    top: 30%;
+  }
+
+  .roadmap_para {
+    width: 100%;
+  }
+
+  .questions {
+    padding-bottom: 50px;
+  }
+
+  .about_dog_fl {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .converter {
+    padding: 100px 0 30px 0;
+    background-position-x: left;
+  }
+
+  .converter {
+    padding: 80px 0 30px 0;
+  }
+
+  .main_top_heading {
+    font-size: 35px;
+    width: 500px;
+    text-shadow: 1px 1px #fff, -1px 1px #fff, 1px 0px #fff, -1px 0px #fff,
+      1px 1px 11px #555;
+  }
+
+  .connect_button {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .about_dog {
+    top: -33px;
+    margin-top: 30px;
+  }
+
+  .about_crypto {
+    padding-top: 1rem;
+  }
+
+  .main_para {
+    font-size: 16px;
+  }
+
+  .section_padding {
+    padding-top: 40px;
+  }
+
+  .roadmap_content h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .wood_border img {
+    padding-top: 40px;
+  }
+
+  .rectangle_design img {
+    width: 180px;
+  }
+
+  .tokenomics_para {
+    font-size: 24px;
+  }
+
+  .tokenomics_heading {
+    font-size: 24px;
+  }
+
+  .polygon_design {
+    width: 260px;
+  }
+
+  .polygon_dog img {
+    width: 250px;
+  }
+
+  .polygon_dog {
+    left: 14px;
+  }
+
+  .reward_lists ul li {
+    font-size: 16px;
+  }
+
+  .reward_lists ul {
+    margin-top: 21px;
+    gap: 12px;
+  }
+
+  .mobile_img {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .questions_section {
+    margin-top: 25px;
+  }
+
+  .acc_sec {
+    margin-top: 20px;
+  }
+
+  .accordion-button {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .accordion-body {
+    padding: 15px 0;
+  }
+
+  .questions {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .roadmap_inner {
+    flex: 0 100%;
+  }
+
+  .roadmap_inner img {
+    max-width: 380px;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .roadmap_layout {
+    gap: 15px;
+  }
+
+  .roadmap_content ul {
+    row-gap: 13px;
+  }
+
+  .roadmap_content {
+    left: 41%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .converter {
+    padding: 30px 0 30px 0;
+  }
+
+  .main_top_heading {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .coin_vkj p {
+    font-size: 16px;
+  }
+
+  .coin_vkj {
+    padding: 6px 13px;
+  }
+
+  .wallet_icon {
+    font-size: 16px;
+  }
+
+  .coin_vkj p {
+    font-size: 15px;
+  }
+
+  .input_convert h2 {
+    font-size: 18px;
+  }
+
+  .coin_inner {
+    padding: 10px;
+  }
+
+  .coin_converter {
+    margin-top: 15px;
+    padding: 10px 10px;
+  }
+
+  .connect_button {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .swap_coins {
+    height: 45px;
+    width: 45px;
+    font-size: 16px;
+  }
+
+  .converted_data input {
+    font-size: 16px;
+  }
+
+  .converted_data p {
+    font-size: 14px;
+  }
+
+  .inputs_select {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .converted_data {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #0f3029;
+    border-radius: 12px;
+  }
+
+  .input_convert {
+    padding: 15px 10px 30px 10px;
+  }
+
+  .coin_converter {
+    margin-top: 15px;
+    padding: 15px 10px;
+  }
+
+  .main_para {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .para_margin {
+    margin-top: 13px;
+  }
+
+  .section_padding {
+    padding-top: 30px;
+  }
+
+  .roadmap_para {
+    margin: 10px auto;
+  }
+
+  .roadmap_content h3 {
+    font-size: 23px;
+    margin-bottom: 6px;
+  }
+
+  .roadmap_content ul {
+    row-gap: 10px;
+  }
+
+  .wood_border img {
+    padding-top: 30px;
+  }
+
+  .tokenomics h2 {
+    margin-bottom: 15px;
+  }
+  .polygon_design {
+    width: 230px;
+  }
+
+  .rectangle_design img {
+    width: 144px;
+  }
+
+  .tokenomics_para {
+    font-size: 20px;
+  }
+
+  .tokenomics_heading {
+    font-size: 23px;
+  }
+
+  .polygon_dog img {
+    width: 200px;
+  }
+
+  .tokenomics_text {
+    top: 33%;
+    width: 100%;
+  }
+
+  .reward_lists ul li {
+    font-size: 14px;
+  }
+
+  .accordion-button {
+    font-size: 16px;
+  }
+
+  .accordion-body p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .questions {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tokenomics h2 {
+    margin-bottom: 15px;
+  }
+
+  .polygon_design {
+    width: 195px;
+  }
+
+  .rectangle_design img {
+    width: 110px;
+  }
+
+  .tokenomics_para {
+    font-size: 16px;
+  }
+
+  .tokenomics_heading {
+    font-size: 17px;
+  }
+
+  .polygon_dog img {
+    width: 166px;
+  }
+
+  .tokenomics_text {
+    top: 36%;
+    width: 100%;
+  }
+}

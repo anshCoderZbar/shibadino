@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-padding-top: 130px;
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #4e734a;
+}
+
+.container-fluid {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1900px) {
+  .container-fluid {
+    max-width: 2100px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .container-fluid {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container-fluid {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .container-fluid {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container-fluid {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-fluid {
+    padding: 0 40px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container-fluid {
+    padding: 0 35px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0 30px !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container-fluid {
+    padding: 0 15px !important;
+  }
+}
