@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import { useSDK } from "@metamask/sdk-react";
 
 import { Bs1Circle, Bs2Square, BsCoin } from "react-icons/bs";
 import { FaArrowDown } from "react-icons/fa";
@@ -6,32 +8,27 @@ import { PiWalletBold } from "react-icons/pi";
 import Select from "react-select";
 
 export const Converter = () => {
-  const options = [
-    {
-      value: "chocolate",
-      label: (
-        <span>
-          <BsCoin /> Chocolate
-        </span>
-      ),
-    },
-    {
-      value: "strawberry",
-      label: (
-        <span>
-          <Bs1Circle /> Strawberry
-        </span>
-      ),
-    },
-    {
-      value: "vanilla",
-      label: (
-        <span>
-          <Bs2Square /> Vanilla
-        </span>
-      ),
-    },
-  ];
+  const [account, setAccount] = useState();
+  const { sdk, connected, connecting, provider } = useSDK();
+
+  const connect = async () => {
+    try {
+      const accounts = await sdk?.connect();
+      setAccount(accounts?.[0]);
+    } catch (err) {
+      console.warn("Failed to connect", err);
+    }
+  };
+
+  const disconnect = async () => {
+    try {
+      await sdk?.disconnect();
+      setAccount("");
+    } catch (error) {
+      console.warn("Failed to connect", error);
+    }
+  };
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -115,10 +112,48 @@ export const Converter = () => {
               </div>
             </div>
 
-            <button className="connect_button">Connect Wallet</button>
+            <button onClick={connect} className="connect_button">
+              {connecting
+                ? "Connecting"
+                : connected
+                  ? `Connected With ${account}`
+                  : "Connect Wallet"}
+            </button>
+            {connected && (
+              <button onClick={disconnect} className="connect_button">
+                Disconnect
+              </button>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+const options = [
+  {
+    value: "provider",
+    label: (
+      <span>
+        <BsCoin /> provider
+      </span>
+    ),
+  },
+  {
+    value: "provider",
+    label: (
+      <span>
+        <Bs1Circle /> provider
+      </span>
+    ),
+  },
+  {
+    value: "provider",
+    label: (
+      <span>
+        <Bs2Square /> provider
+      </span>
+    ),
+  },
+];
