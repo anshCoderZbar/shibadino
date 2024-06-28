@@ -1,13 +1,29 @@
-import { RouterProvider } from "react-router-dom";
-import "./App.css";
-import { router } from "routes";
 import { useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Footer, Header } from "components";
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+import Home from "pages/home";
+import AOS from "aos";
 
 function App() {
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+  useEffect(() => {
     require("bootstrap/dist/js/bootstrap.js");
   }, []);
-  return <RouterProvider router={router} />;
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;
