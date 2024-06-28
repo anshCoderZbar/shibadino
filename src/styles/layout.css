@@ -72,6 +72,118 @@
   display: none !important;
 }
 
+/* google translator */
+
+body > .skiptranslate {
+  display: none;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+@media print {
+  #google_translate_element {
+    display: none;
+  }
+}
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  margin: 0;
+  position: relative;
+  top: 9px;
+  right: 23px;
+  width: 87px;
+  padding: 11px 7px;
+  border-radius: 6px;
+  background-color: #537b50;
+  border: 1px solid white;
+  color: white;
+}
+
+.goog-te-gadget .goog-te-combo:focus {
+  outline: none;
+}
+#google_translate_element {
+  color: transparent;
+}
+#google_translate_element a {
+  display: none;
+}
+.google-translate-select {
+  /* Change background color */
+  background-color: #0f3029 !important;
+  /* Change text color */
+  color: #fff;
+  /* Add padding */
+  padding: 8px;
+  /* Change border */
+  border: 1px solid #ccc;
+  /* Change font */
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  /* Adjust width */
+  /* Add some rounded corners */
+  border-radius: 5px;
+  /* Customize the dropdown arrow */
+  /* background-image: url('../images/arrow.png'); */
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* Ensure the dropdown arrow is visible */
+  padding-right: 20px;
+}
+
+/* Style the dropdown options */
+.google-translate-select option {
+  /* Change text color */
+  color: #333;
+  /* Change background color */
+  background-color: #fff;
+  /* Add padding */
+  padding: 8px;
+  /* Adjust font */
+  font-family: Arial, sans-serif;
+}
+.goog-te-combo option:first-child {
+  display: none !important;
+}
+.box-dc h3 span {
+  display: flex;
+  align-items: center;
+}
+.goog-te-banner-frame,
+.goog-logo-link {
+  display: none;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+.goog-te-gadget::selection {
+  color: transparent !important;
+}
+
+.goog-te-gadget::-moz-selection {
+  color: transparent !important;
+}
+
+#google_translate_element img {
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+/* google translator */
+
+/* footer */
 .page-footer {
   background-color: #0f3029;
   padding-top: 80px;
