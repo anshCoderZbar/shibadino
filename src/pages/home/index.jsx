@@ -1,11 +1,16 @@
+import React, { useEffect, useRef } from "react";
 import { Converter } from "app/home/Converter";
 import { ASSETS } from "assets";
-import React from "react";
 import { BsShieldFillCheck } from "react-icons/bs";
 
 import "styles/home.css";
 
 export default function Home() {
+  const vidRef = useRef();
+
+  useEffect(() => {
+    vidRef.current.play();
+  }, []);
   return (
     <main>
       <section className="converter">
@@ -138,49 +143,51 @@ export default function Home() {
       {/* rewards */}
       <section className="rewards  section_padding">
         <div className="container-fluid">
-          <div className="row rewards_layout">
-            <div className="col-md-6">
-              <h2 className="main_top_heading ">get Rewards</h2>
-              <div className="reward_lists">
-                <ul>
-                  <li className="d-flex gap-3">
-                    <span>
-                      <BsShieldFillCheck />
-                    </span>
-                    <p>
-                      <strong>Earn Points by Playing :</strong> Gamers earn
-                      CryptoRewards Points (CRP) by playing supported games
-                      within the app. Points are awarded based on game
-                      performance, achievements, and milestones.
-                    </p>
-                  </li>
-                  <li className="d-flex gap-3">
-                    <span>
-                      <BsShieldFillCheck />
-                    </span>
-                    <p>
-                      <strong>Earn Points by Playing :</strong> Gamers earn
-                      CryptoRewards Points (CRP) by playing supported games
-                      within the app. Points are awarded based on game
-                      performance, achievements, and milestones.
-                    </p>
-                  </li>
-                  <li className="d-flex gap-3">
-                    <span>
-                      <BsShieldFillCheck />
-                    </span>
-                    <p>
-                      <strong>Earn Points by Playing :</strong> Gamers earn
-                      CryptoRewards Points (CRP) by playing supported games
-                      within the app. Points are awarded based on game
-                      performance, achievements, and milestones.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+          <div className="rewards_layout">
+            <h2 className="main_top_heading mx-auto">get Rewards</h2>
+            <div className="reward_lists">
+              <ul>
+                <li className="d-flex gap-3">
+                  <span>
+                    <BsShieldFillCheck />
+                  </span>
+                  <p>
+                    <strong>Earn Points by Playing :</strong> Gamers earn
+                    CryptoRewards Points (CRP) by playing supported games within
+                    the app. Points are awarded based on game performance,
+                    achievements, and milestones.
+                  </p>
+                </li>
+                <li className="d-flex gap-3">
+                  <span>
+                    <BsShieldFillCheck />
+                  </span>
+                  <p>
+                    <strong>Earn Points by Playing :</strong> Gamers earn
+                    CryptoRewards Points (CRP) by playing supported games within
+                    the app. Points are awarded based on game performance,
+                    achievements, and milestones.
+                  </p>
+                </li>
+                <li className="d-flex gap-3">
+                  <span>
+                    <BsShieldFillCheck />
+                  </span>
+                  <p>
+                    <strong>Earn Points by Playing :</strong> Gamers earn
+                    CryptoRewards Points (CRP) by playing supported games within
+                    the app. Points are awarded based on game performance,
+                    achievements, and milestones.
+                  </p>
+                </li>
+              </ul>
             </div>
-            <div className="col-md-6 mobile_img">
-              <img src={ASSETS.MOBILE_IMG} alt="mobile" />
+            <div className="dog_gifs">
+              <video src={ASSETS.DOG_GIF_1} loop autoPlay muted ref={vidRef} />
+              <video src={ASSETS.DOG_GIF_2} loop autoPlay muted ref={vidRef} />
+              <video src={ASSETS.DOG_GIF_3} loop autoPlay muted ref={vidRef} />
+              <video src={ASSETS.DOG_GIF_4} loop autoPlay muted ref={vidRef} />
+              <video src={ASSETS.DOG_GIF_5} loop autoPlay muted ref={vidRef} />
             </div>
           </div>
         </div>
