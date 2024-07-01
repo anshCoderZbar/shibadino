@@ -88,7 +88,7 @@ export default function Home() {
       <section className="tokenomics section_padding">
         <div className="container-fluid">
           <h2 className="main_top_heading mx-auto text-center">Tokenomics</h2>
-          <div className="tokenomics_section">
+          {/* <div className="tokenomics_section">
             <div className="polygon">
               <img
                 src={ASSETS.POLYGON}
@@ -133,6 +133,10 @@ export default function Home() {
                 <h3 className="main_top_heading tokenomics_heading">15%</h3>
               </div>
             </div>
+          </div> */}
+
+          <div className="tokenomics_section">
+            <img src={ASSETS.TOKENOMICS_SECTION} alt="tokenomics" />
           </div>
           <div className="wood_border">
             <img src={ASSETS.WOOD_BORDER} alt="border" />
