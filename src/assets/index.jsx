@@ -1,4 +1,9 @@
 import logo from "./images/logo.svg";
+import dog_gif_1 from "./images/dog_1.gif.mp4";
+import dog_gif_2 from "./images/dog_2.gif.mp4";
+import dog_gif_3 from "./images/dog_3.gif.mp4";
+import dog_gif_4 from "./images/dog_4.gif.mp4";
+import dog_gif_5 from "./images/dog_5.gif.mp4";
 
 export const ASSETS = {
   LOGO: logo,
@@ -15,4 +20,9 @@ export const ASSETS = {
   RECTANGLE_4: require("./images/rectangle_4.png"),
   FOOTER_BORDER: require("./images/footer_border.png"),
   MOBILE_IMG: require("./images/mobile_img.png"),
+  DOG_GIF_1: dog_gif_1,
+  DOG_GIF_2: dog_gif_2,
+  DOG_GIF_3: dog_gif_3,
+  DOG_GIF_4: dog_gif_4,
+  DOG_GIF_5: dog_gif_5,
 };
