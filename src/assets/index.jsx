@@ -4,6 +4,7 @@ import dog_gif_2 from "./images/dog_2.gif.mp4";
 import dog_gif_3 from "./images/dog_3.gif.mp4";
 import dog_gif_4 from "./images/dog_4.gif.mp4";
 import dog_gif_5 from "./images/dog_5.gif.mp4";
+import tokenomics_section from "./images/tokenomics_sec.png";
 
 export const ASSETS = {
   LOGO: logo,
@@ -25,4 +26,5 @@ export const ASSETS = {
   DOG_GIF_3: dog_gif_3,
   DOG_GIF_4: dog_gif_4,
   DOG_GIF_5: dog_gif_5,
+  TOKENOMICS_SECTION: tokenomics_section,
 };
